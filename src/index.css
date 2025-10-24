@@ -1,3 +1,4 @@
+/* stylelint-disable at-rule-no-unknown */
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&family=Poppins:wght@400;500;600;700&display=swap');
 
 @tailwind base;
@@ -40,12 +41,14 @@
   }
 
   * {
-    @apply border-border;
+    border-color: hsl(var(--color-border));
   }
 
   html,
   body {
-    @apply bg-background text-foreground;
+    /* Use explicit CSS that reads the CSS variables defined in :root */
+    background-color: hsl(var(--color-background));
+    color: hsl(var(--color-foreground));
     font-family: var(--font-sans);
   }
 
@@ -61,6 +64,9 @@
 
 @layer utilities {
   .text-balance {
-    text-wrap: balance;
+    /* Experimental balancing; provide comment/fallback for browsers without support */
+    text-wrap: balance; /* may be experimental in some browsers */
+    /* No-op fallbacks — if unsupported the browser will ignore the rule.
+       Consider progressive enhancement (JS-based balance) if uniform support is required. */
   }
 }
