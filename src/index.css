@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&family=Poppins:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: 220 85% 56%;
+    --color-primary-foreground: 0 0% 98%;
+    --color-secondary: 220 85% 65%;
+    --color-secondary-foreground: 0 0% 10%;
+    --color-tertiary: 10 75% 65%;
+    --color-tertiary-foreground: 0 0% 98%;
+    --color-neutral: 0 0% 98%;
+    --color-neutral-foreground: 220 15% 20%;
+    --color-success: 145 58% 46%;
+    --color-warning: 35 92% 58%;
+    --color-background: 0 0% 98%;
+    --color-foreground: 220 15% 20%;
+    --color-border: 0 0% 90%;
+    --color-input: 0 0% 90%;
+    --color-ring: 220 85% 56%;
+    --color-muted: 0 0% 96%;
+    --color-muted-foreground: 0 0% 38%;
+    --color-accent: 0 0% 96%;
+    --color-accent-foreground: 220 15% 20%;
+    --color-destructive: 0 84% 60%;
+    --color-destructive-foreground: 0 0% 98%;
+    --color-popover: 0 0% 98%;
+    --color-popover-foreground: 220 15% 20%;
+    --color-card: 0 0% 98%;
+    --color-card-foreground: 220 15% 20%;
+    
+    --font-sans: "Nunito Sans", sans-serif;
+    --font-headline: "Poppins", sans-serif;
+    --font-label: "Poppins", sans-serif;
+    
+    --corner-radius: 12px;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html,
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-headline);
+    @apply text-gray-900;
+  }
+
+  button {
+    font-family: var(--font-label);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
