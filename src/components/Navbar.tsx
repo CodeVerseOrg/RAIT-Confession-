@@ -10,14 +10,14 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-} from '@/components/ui/navigation-menu';
+} from './components/ui/navigation-menu';
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu';
-import { useConfessionStore } from '@/stores/confessionStore';
+} from './components/ui/dropdown-menu';
+import { useConfessionStore } from './stores/confessionStore';
 
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

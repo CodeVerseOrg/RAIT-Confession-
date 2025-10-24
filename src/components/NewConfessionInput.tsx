@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { ImageIcon, VideoIcon, SendIcon } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Textarea } from '@/components/ui/textarea';
-import { Card } from '@/components/ui/card';
-import { Input } from '@/components/ui/input';
-import { useConfessionStore } from '@/stores/confessionStore';
+import { Button } from './components/ui/button';
+import { Textarea } from './components/ui/textarea';
+import { Card } from './components/ui/card';
+import { Input } from './components/ui/input';
+import { useConfessionStore } from './stores/confessionStore';
 
 export function NewConfessionInput() {
   const [content, setContent] = useState('');

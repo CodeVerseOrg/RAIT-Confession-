@@ -1,13 +1,13 @@
 import { useState, useEffect, useRef } from 'react';
 import { HeartIcon, MessageCircleIcon, Share2Icon, FlagIcon, AlertTriangleIcon } from 'lucide-react';
-import { Card } from '@/components/ui/card';
-import { Avatar, AvatarFallback } from '@/components/ui/avatar';
-import { Button } from '@/components/ui/button';
-import { Separator } from '@/components/ui/separator';
-import { Textarea } from '@/components/ui/textarea';
-import { useConfessionStore, type Confession } from '@/stores/confessionStore';
-import { useAdminStore } from '@/stores/adminStore';
-import { useToast } from '@/hooks/use-toast';
+import { Card } from './components/ui/card';
+import { Avatar, AvatarFallback } from './components/ui/avatar';
+import { Button } from './components/ui/button';
+import { Separator } from './components/ui/separator';
+import { Textarea } from './components/ui/textarea';
+import { useConfessionStore, type Confession } from './stores/confessionStore';
+import { useAdminStore } from './stores/adminStore';
+import { useToast } from './hooks/use-toast';
 import {
   Dialog,
   DialogContent,
@@ -15,7 +15,7 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-} from '@/components/ui/dialog';
+} from './components/ui/dialog';
 import gsap from 'gsap';
 
 interface ConfessionCardProps {

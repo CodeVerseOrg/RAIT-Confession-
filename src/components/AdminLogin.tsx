@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { LockIcon, UserIcon } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Label } from '@/components/ui/label';
-import { useAdminStore } from '@/stores/adminStore';
-import { useToast } from '@/hooks/use-toast';
+import { Button } from './components/ui/button';
+import { Input } from './components/ui/input';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './components/ui/card';
+import { Label } from './components/ui/label';
+import { useAdminStore } from './stores/adminStore';
+import { useToast } from './hooks/use-toast';
 
 interface AdminLoginProps {
   onLoginSuccess: () => void;

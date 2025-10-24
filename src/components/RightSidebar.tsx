@@ -1,7 +1,7 @@
 import { TrendingUpIcon, HashIcon } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Card } from '@/components/ui/card';
-import { Separator } from '@/components/ui/separator';
+import { Button } from './components/ui/button';
+import { Card } from './components/ui/card';
+import { Separator } from './components/ui/separator';
 
 interface RightSidebarProps {
   onNewConfession: () => void;
