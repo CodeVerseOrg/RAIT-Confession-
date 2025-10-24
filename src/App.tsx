@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import { Navbar } from '@/components/Navbar';
+import { Navbar } from '@/components/Navbar.tsx';
 import { AdminRoute } from '@/components/AdminRoute';
 import { Toaster } from '@/components/ui/toaster';
 import { Sidebar } from '@/components/Sidebar';
@@ -95,3 +95,4 @@ function App() {
 }
 
 export default App;
+
