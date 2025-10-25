@@ -1,17 +1,17 @@
 import { useState, useEffect, useRef } from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import { Navbar } from './components/Navbar';
-import { AdminRoute } from './components/AdminRoute';
-import { Toaster } from './components/ui/toaster';
-import { Sidebar } from './components/Sidebar';
-import { RightSidebar } from './components/RightSidebar';
-import { NewConfessionInput } from './components/NewConfessionInput';
-import { ConfessionCard } from './components/ConfessionCard';
-import { FeedLoader } from './components/FeedLoader';
-import { NewConfessionModal } from './components/NewConfessionModal';
-import { FloatingActionButton } from './components/FloatingActionButton';
-import { Footer } from './components/Footer';
-import { useConfessionStore } from './stores/confessionStore';
+import { Navbar } from '@/components/Navbar';
+import { AdminRoute } from '@/components/AdminRoute';
+import { Toaster } from '@/components/ui/toaster';
+import { Sidebar } from '@/components/Sidebar';
+import { RightSidebar } from '@/components/RightSidebar';
+import { NewConfessionInput } from '@/components/NewConfessionInput';
+import { ConfessionCard } from '@/components/ConfessionCard';
+import { FeedLoader } from '@/components/FeedLoader';
+import { NewConfessionModal } from '@/components/NewConfessionModal';
+import { FloatingActionButton } from '@/components/FloatingActionButton';
+import { Footer } from '@/components/Footer';
+import { useConfessionStore } from '@/stores/confessionStore';
 
 function HomePage() {
   const [loading, setLoading] = useState(false);

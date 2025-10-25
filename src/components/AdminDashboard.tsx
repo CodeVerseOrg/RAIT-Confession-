@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { LogOutIcon, TrashIcon, EyeIcon, AlertTriangleIcon, CheckCircleIcon, XCircleIcon } from 'lucide-react';
-import { Button } from './components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './components/ui/card';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from './components/ui/tabs';
-import { ScrollArea } from './components/ui/scroll-area';
-import { Separator } from './components/ui/separator';
-import { Avatar, AvatarFallback } from './components/ui/avatar';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { ScrollArea } from '@/components/ui/scroll-area';
+import { Separator } from '@/components/ui/separator';
+import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import {
   Dialog,
   DialogContent,
@@ -13,10 +13,10 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-} from './components/ui/dialog';
-import { useAdminStore } from './stores/adminStore';
-import { useConfessionStore } from './stores/confessionStore';
-import { useToast } from './hooks/use-toast';
+} from '@/components/ui/dialog';
+import { useAdminStore } from '@/stores/adminStore';
+import { useConfessionStore } from '@/stores/confessionStore';
+import { useToast } from '@/hooks/use-toast';
 
 export function AdminDashboard() {
   const [selectedConfession, setSelectedConfession] = useState<string | null>(null);
